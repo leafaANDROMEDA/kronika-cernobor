@@ -35,3 +35,20 @@ function openModal(locationId) {
 function closeModal() {
     document.getElementById('location-modal').style.display = 'none';
 }
+
+// PŘEPÍNÁNÍ KOUZEL/LEKTVARŮ V KNIHOVNĚ
+function showSpell(spellId, btnElement) {
+    // 1. Skryje všechna kouzla v pravém sloupci
+    const spells = document.querySelectorAll('.spell-detail');
+    spells.forEach(spell => spell.classList.remove('active-spell'));
+    
+    // 2. Zobrazí kliknuté kouzlo
+    document.getElementById(spellId).classList.add('active-spell');
+
+    // 3. Odstraní červenou barvu (třídu active-btn) ze všech tlačítek v menu
+    const buttons = document.querySelectorAll('.kniha-btn');
+    buttons.forEach(btn => btn.classList.remove('active-btn'));
+
+    // 4. Přidá červenou barvu na to tlačítko, na které se právě kliklo
+    btnElement.classList.add('active-btn');
+}

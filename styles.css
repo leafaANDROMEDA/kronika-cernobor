@@ -14,14 +14,57 @@ header {
     border-bottom: 2px solid #8b0000;
 }
 
-/* ROZDĚLOVNÍK ROČNÍKŮ (Římské číslice) */
-.rocniky-container {
-    max-width: 600px;
+/* KONTEJNER PRO OBA SLOUPCE */
+.main-layout {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
     margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* VZHLED SAMOTNÝCH SLOUPCŮ */
+.rocniky-container, .spisy-container {
     background: #222;
-    padding: 30px 50px;
+    padding: 30px 40px;
     border-radius: 8px;
     border: 1px solid #444;
+    flex: 1; /* Zaručí, že oba sloupce budou stejně široké */
+}
+
+/* ÚPRAVA NADPISŮ VE SLOUPCÍCH */
+.rocniky-container h3, .spisy-container h3 {
+    text-align: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: #fff;
+}
+
+/* SEZNAM PRO SPISY */
+.spisy-list {
+    list-style-type: square;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.spisy-list a {
+    color: #8aa;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.spisy-list a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ZALOMENÍ POD SEBE NA MOBILECH */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
 }
 
 .rocniky-list {
@@ -156,6 +199,102 @@ section.active {
 
 .map-pin:hover .pin-label {
     display: block;
+}
+
+/* ZVÝRAZNĚNÍ AKTIVNÍCH SPISŮ */
+.active-spis {
+    color: #ff4444 !important; /* Červená barva přebíjející standardní šedou */
+    font-weight: bold;
+}
+
+.active-spis:hover {
+    color: #ff7777 !important;
+}
+
+/* LAYOUT KNIHY KOUZEL A LEKTVARŮ */
+.kniha-layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 30px;
+    align-items: start;
+}
+
+/* LEVÉ MENU S POSUVNÍKEM */
+.kniha-menu {
+    flex: 0 0 300px; /* Pevná šířka 300px */
+    background: #222;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    max-height: 70vh; /* Maximální výška je 70 % obrazovky */
+    overflow-y: auto; /* Pokud je kouzel moc, objeví se zde posuvník */
+}
+
+.kniha-menu h3 {
+    margin-top: 0;
+    color: #fff;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+/* TLAČÍTKA V MENU KNIHY */
+.kniha-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #333;
+    color: #ccc;
+    border: 1px solid #444;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.kniha-btn:hover {
+    background: #555;
+    color: #fff;
+}
+
+.kniha-btn.active-btn {
+    background: #8b0000;
+    color: #fff;
+    border-color: #ff4444;
+}
+
+/* PRAVÝ OBSAH KNIHY */
+.kniha-obsah {
+    flex: 1; /* Zabere zbytek šířky obrazovky */
+    background: #222;
+    padding: 40px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    min-height: 400px;
+}
+
+/* SKRÝVÁNÍ A ZOBRAZOVÁNÍ KOUZEL */
+.spell-detail {
+    display: none;
+}
+
+.spell-detail.active-spell {
+    display: block;
+}
+
+/* ZALOMENÍ NA MOBILECH (Menu bude nahoře, text dole) */
+@media (max-width: 768px) {
+    .kniha-layout {
+        flex-direction: column;
+    }
+    .kniha-menu {
+        flex: auto;
+        width: 100%;
+        max-height: 300px; /* Na mobilu menší okno s posuvníkem */
+    }
 }
 
 .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; }

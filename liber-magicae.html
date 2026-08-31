@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liber Magicae - Archiv</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Liber Magicae</h1>
+        <p>Kniha kouzel a magických ritálů</p>
+        <p>Tato kniha slouží pouze jako seznam kouzel které se ve hře vyskitli, nicméně je hráči podle běžných pravidel nemohou používat.</p>
+        <nav>
+            <a href="index.html" class="nav-btn">← Zpět do archivu</a>
+        </nav>
+    </header>
+
+    <div class="kniha-layout">
+        
+        <!-- LEVÉ MENU: Seznam kouzel -->
+        <aside class="kniha-menu">
+            <h3>Seznam kouzel</h3>
+            <button class="kniha-btn active-btn" onclick="showSpell('kouzlo-zarikadlo', this)">Zaříkadlo</button>
+            <button class="kniha-btn" onclick="showSpell('kouzlo-zbaveni-magie', this)">Zbavení magie</button>
+            <button class="kniha-btn" onclick="showSpell('kouzlo-stity', this)">Magický štít</button>
+            <!-- Sem přidávej další tlačítka -->
+        </aside>
+
+        <!-- PRAVÝ SLOUPEC: Detail konkrétního kouzla -->
+        <main class="kniha-obsah">
+            
+            <!-- ÚVODNÍ / PRVNÍ KOUZLO (má třídu active-spell) -->
+            <div id="kouzlo-zarikadlo" class="spell-detail active-spell">
+                <h2>Zaříkadlo</h2>
+                <p><strong>Dosah:</strong> na sebe <br>
+                <strong>Zaklínadlo:</strong> Tenemenes</p>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Postava má do konce herčasu 0 slov moci, slova moci není možné doplnit ani meditací. Pro potřeby mechanik se nepočítá jako že umí kouzlit.</p>
+            </div>
+
+            <!-- DRUHÉ KOUZLO (skryté) -->
+            <div id="kouzlo-zbaveni-magie" class="spell-detail">
+                <h2>Zaříkadlo ku zbavení škůdců daru umění magického</h2>
+                <p><strong>Typ:</strong> Rituál <br>
+                <strong>Zaklínadlo:</strong> 5 vteřin doteku</p>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Léčitel dokáže zacelit rány a zastavit krvácení. Nefunguje na nemoci a magické kletby.</p>
+            </div>
+
+            <!-- TŘETÍ KOUZLO (skryté) -->
+            <div id="kouzlo-stity" class="spell-detail">
+                <h2>Magický štít</h2>
+                <p><strong>h:</strong> hhhh <br>
+                <strong>hh:</strong> hhhh</p>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>hhhhh</p>
+                <p><em>Formule: "hhhhh!"</em></p>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
