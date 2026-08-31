@@ -1,12 +1,12 @@
 {
-    "tabor_kaltwasser": {
-        "title": "Tábor Kaltwasserů",
-        "desc": "Hlavní opevnění rodu Kaltwasser, kde se kuly pikle proti Poljanské výpravě.",
-        "factionLink": "frakce-kaltwasser.html"
+    "ostatky_sercarionu": {
+        "title": "Ostatky sercarionu",
+        "desc": "Jak kráčíš vyprahlou stezkou, zvířený opar jako by ožil vlastním dechem. Přímo před tvým zrakem z něj zvolna povstávají dvě temné postavy, v jejichž zhmotňujících se dlaních spočívají masivní obouruční čepele. Hledí na tebe chladnýma očima bez života, z nichž čiší mrazivý klid. Připomínají mlčenlivé sochy probuzené z dávného spánku k jedinému účelu: střežit to, k čemu ses právě nevědomky přiblížil.",
+        "factionLink": "frakce-poljanska.html"
     },
-    "hranicni_pevnost": {
-        "title": "Hraniční pevnost",
-        "desc": "Neutrální území, kde proběhla klíčová jednání.",
-        "factionLink": "frakce-vrangenska.html"
+    "doupe_snovacky": {
+        "title": "Doupě snovačky",
+        "desc": "desc snovačka",
+        "factionLink": "frakce-poljanska.html"
     }
 }
