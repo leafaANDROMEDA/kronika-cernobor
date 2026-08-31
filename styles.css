@@ -120,8 +120,8 @@ section.active {
 /* KLIKACÍ ŠPENDLÍK */
 .map-pin {
     position: absolute;
-    width: 18px;
-    height: 18px;
+    width: 7px;
+    height: 7px;
     background-color: #ff3333;
     border: 2px solid #ffffff;
     border-radius: 50%;
