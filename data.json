@@ -1,0 +1,12 @@
+{
+    "tabor_kaltwasser": {
+        "title": "Tábor Kaltwasserů",
+        "desc": "Hlavní opevnění rodu Kaltwasser, kde se kuly pikle proti Poljanské výpravě.",
+        "factionLink": "frakce-kaltwasser.html"
+    },
+    "hranicni_pevnost": {
+        "title": "Hraniční pevnost",
+        "desc": "Neutrální území, kde proběhla klíčová jednání.",
+        "factionLink": "frakce-vrangenska.html"
+    }
+}

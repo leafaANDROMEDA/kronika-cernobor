@@ -1,0 +1,125 @@
+/* ZÁKLAD */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #8b0000;
+}
+
+/* ROZDĚLOVNÍK ROČNÍKŮ (Římské číslice) */
+.rocniky-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #222;
+    padding: 30px 50px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.rocniky-list {
+    list-style-type: upper-roman;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #888; /* Neaktivní ročníky jsou šedé */
+}
+
+.active-rocnik {
+    color: #ff4444;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.active-rocnik:hover {
+    color: #ff7777;
+    text-decoration: underline;
+}
+
+/* MENU TLAČÍTKA A ODKAZY */
+nav button, nav .nav-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #8b0000;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav button:hover, nav .nav-btn:hover {
+    background-color: #8b0000;
+}
+
+/* SEKCE STRÁNEK */
+section {
+    display: none; /* JS odkrývá aktivní sekce */
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section.active {
+    display: block; /* Vlastní stránky frakcí mají section rovnou active */
+}
+
+/* KARTY FRAKCÍ */
+.frakce-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.frakce-card {
+    flex: 1;
+    background: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #8b0000;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.frakce-card:hover {
+    background: #8b0000;
+    transform: translateY(-5px);
+}
+
+/* MAPA A ODKAZY - Zůstává stejné */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #333; 
+    background-image: url('mapa-skleneny-mir.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+
+.map-pin {
+    position: absolute; width: 20px; height: 20px;
+    background-color: #ff3333; border: 2px solid white;
+    border-radius: 50%; cursor: pointer; transform: translate(-50%, -50%);
+}
+
+.map-pin:hover { transform: translate(-50%, -50%) scale(1.3); }
+
+.modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; }
+.modal-content { background-color: #222; width: 400px; margin: 100px auto; padding: 20px; border: 1px solid #8b0000; text-align: center; }
+.close-btn { background: red; color: white; border: none; padding: 5px 10px; cursor: pointer; float: right; }
+.action-btn { padding: 10px; background: #8b0000; color: white; border: none; cursor: pointer; margin-top: 15px; }

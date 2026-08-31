@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poljanská výprava - Skleněný mír</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+
+    <header>
+        <h1>Poljanská výprava</h1>
+        <p>Diplomacie, magie a zájmy Sejmu</p>
+        <nav>
+            <a href="skleneny-mir.html" class="nav-btn">← Zpět na ročník</a>
+            <button onclick="showSection('pribeh')">Příběh</button>
+            <button onclick="showSection('postavy')">Postavy</button>
+            <button onclick="showSection('ostatni')">Ostatní</button>
+        </nav>
+    </header>
+
+    <!-- SEKCE PŘÍBĚH -->
+    <section id="pribeh" class="active">
+        <h2>Úkol od Sejmu</h2>
+        <p>Zde můžeš doplnit příběhové pozadí Poljanské výpravy, proč dorazili, co se jim během hry stalo a jaké události formovaly jejich cestu...</p>
+    </section>
+
+    <!-- SEKCE POSTAVY -->
+    <section id="postavy">
+        <h2>Členové delegace</h2>
+        <div class="postavy-grid">
+            
+            <div class="postava-card">
+                <h3>Eliasz Wysocki</h3>
+                <p><strong>Hráč:</strong> Honza D<br>
+                <strong>Role:</strong> Hlava delegace</p>
+                <p>Velkomožný pán Wysocki, hlava delegace a hlavní vyjednavač pověřený Sejmem. Jeho agenda je za každou cenu vyjednat mír a nebo alespoň co nejlepší podmínky pro Poljanu. Je známý svou chronickou smůlou, přesto byl vyslán vyjednávat; zvláštní a nešťastné události kolem něj jej obtěžují a zdržují od práce. Bude zajišťovat především jednání a zařizování dobré pozice pro Poljanu na místě, ať už způsoby oficiálními nebo méně oficiálními. Poljana je na prvním místě!</p>
+                <p><em>Specifická herní úloha: Vyjednávání, politika, špionáž, prezentace, zvládání nešťastných událostí</em></p>
+            </div>
+            
+            <div class="postava-card">
+                <h3>Bartołomiej Perkowski</h3>
+                <p><strong>Hráč:</strong> Mamut<br>
+                <strong>Role:</strong> Tajemník delegace</p>
+                <p>Pán Perkowski, tajemník delegace, blízký přítel Eliasze. Je zběhlý v magických vědách a někdo takový je vždy žádaný. Několikrát již zachránilo magické nadání pana Perkowskiho osud delegace a pana Wysockiho. Na místě bude především zajišťovat hladký chod veškerých operací, podpoří úspěch delegace nejen magií, ale i svými znalostmi a zařídí, aby pan Wysocky nebyl zdržován od svých diplomatických povinností. Někdy nemusí být řešení přímo magická, účel světí prostředky. A pokud by mělo padnout podezření na nějakou nepravost, je přeci jen bezpečnější, aby nepadla vina hned na hlavu delegace.</p>
+                <p><em>Specifická herní úloha: Magie, špionáž, odrážení a řešení nešťastných událostí, občas si ušpiní ruce</em></p>
+            </div>
+
+            <div class="postava-card">
+                <h3>Zofia Kaplická</h3>
+                <p><strong>Hráč:</strong> Kačka B<br>
+                <strong>Role:</strong> Sestra pana Kaplického</p>
+                <p>Velkomožná paní Kaplická, sestra pana Kaplického, pána na Kaltwasseru. Ve stínu svého bratra ovšem zůstat neplánuje. Některé vlastnosti se sice v rodině Kaplických skutečně dědí, ale Zofie na Kaltwasser přichází svou rodinu skutečně zajistit a zviditelnit, ne o tom pouze mluvit. Je na čase, aby se někdo podíval na zub údajnému místnímu bohatství a konečně poměry na Kaltwasseru dal do pohybu.</p>
+                <p><em>Specifická herní úloha: Vyjednávání bez rukaviček, pátrání, odhalování místních poměrů</em></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEKCE OSTATNÍ -->
+    <section id="ostatni">
+        <h2>Mimoherní záznamy</h2>
+        <ul>
+            <li><strong>Zajímavost:</strong> (Zde můžeš doplnit zajímavosti k Poljanské výpravě)</li>
+        </ul>
+    </section>
+
+</body>
+</html>
