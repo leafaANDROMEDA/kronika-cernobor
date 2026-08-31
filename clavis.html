@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clavis ad Miraculum Cognitionis - Archiv</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>CLAVIS AD MIRACULUM COGNITIONIS</h1>
+        <p>Mistrovské dílo alchymie a bylinkářství</p>
+        <nav>
+            <a href="index.html" class="nav-btn">← Zpět do archivu</a>
+        </nav>
+    </header>
+
+    <div class="kniha-layout">
+        
+        <!-- LEVÉ MENU: Seznam lektvarů -->
+        <aside class="kniha-menu">
+            <h3>Seznam lektvarů</h3>
+            <!-- Funkce showSpell i zde funguje perfektně, není potřeba dělat novou -->
+            <button class="kniha-btn active-btn" onclick="showSpell('langardsky-rudy-svit', this)">langardský rudý svit</button>
+            <button class="kniha-btn" onclick="showSpell('marenettinska-kovova-rosa', this)">marenettinská kovová rosa</button>
+            <button class="kniha-btn" onclick="showSpell('cerny-dech-orlenburku', this)">černý dech Orlenburku</button>
+            <button class="kniha-btn" onclick="showSpell('stinova-zluc-orlenburku', this)">stínová žluč Orlenburku</button>
+            <button class="kniha-btn" onclick="showSpell('skyberennsky-popel-smrti', this)">Skyberennský popel smrti</button>
+            <button class="kniha-btn" onclick="showSpell('belokrev-orlenburku', this)">bělokrev Orlenburku</button>
+            <button class="kniha-btn" onclick="showSpell('Poljansky-cerny-mlyn', this)">Poljanský černý mlýn</button>
+            <button class="kniha-btn" onclick="showSpell('Vrangensky-rudy-popel', this)">Vrangenský rudý popel</button>
+            <button class="kniha-btn" onclick="showSpell('Langardska-cerna-ruze', this)">Langardska černa růže</button>
+            <button class="kniha-btn" onclick="showSpell('Altmarksy-zelezny-dech', this)">Altmarský železný dech</button>
+            <button class="kniha-btn" onclick="showSpell('Witensteenská-stribrna-tisen', this)">Witensteenská stříbrná tísen</button>
+            <button class="kniha-btn" onclick="showSpell('Poljansky-vlci-stesk', this)">Poljanský vlčí stesk</button>
+        </aside>
+
+        <!-- PRAVÝ SLOUPEC: Detail konkrétního lektvaru -->
+        <main class="kniha-obsah">
+            
+            <!-- PRVNÍ LEKTVAR (aktivní) -->
+            <div id="langardsky-rudy-svit" class="spell-detail active-spell">
+                <h2>Langardský rudý svit</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> krev, rtut</li>
+                    <li><strong>Původ:</strong> Langardie</li>
+                    <li><strong>Protijed:</strong> Lektvar z bylin smíchaný s uhlíkovým prachem, který ochladí tělo.</li>
+                </ul>
+                                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Tento jed je založený na krvi a rtuti, byl poprvé spatřen v Langardii. Obet zrudne v obličeji, tělo se zahřeje jako v horečce a nakonec dojde k selhání srdce.</p>
+            </div>
+
+            <!-- DRUHÝ LEKTVAR (skrytý) -->
+            <div id="marenettinska-kovova-rosa" class="spell-detail">
+                <h2>Marenettinská kovová rosa</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> rtut, kovový prach</li>
+                    <li><strong>Původ:</strong> Marenetto</li>
+                    <li><strong>Protijed:</strong> Směs žluči a čerstvých bylin, rychle podaná.</li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Vzniká destilací rtuti pžez vrstvy kovového prachu. Kapky této "rosy" jsou čiré, téměř krásné. Po vpravení do těla však způsobují, že krev se mění na těžkou a obet umírá na zadušení vlastními žilami.</p>
+            </div>
+
+            <!-- TŘETÍ LEKTVAR (skrytý) -->
+            <div id="cerny-dech-orlenburku" class="spell-detail">
+                <h2>Černý dech Orlenburku</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> kosti, krev, rtut</li>
+                    <li><strong>Původ:</strong> Orlenburk</li>
+                    <li><strong>Protijed:</strong> <i>Pevné částice ze zásobních vaků hrobokopa, rozemleté a smíchané s vodou a léčivými bylinami.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Tento jed je známý jako "kletba vlků z Orlenburku". Směs kostí krve a rtuti se nechává zrát ve stříbrných nádobách. Oběti se dusí, jejich dech se zbarví do kovově šedé a do několika hodin ztrácejí vědomí.</p>
+            </div>
+
+            <div id="stinova-zluc-orlenburku" class="spell-detail">
+                <h2>Stínová žluč Orlenburku</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> žluč, kovový prach</li>
+                    <li><strong>Původ:</strong> Orlenburk</li>
+                    <li><strong>Protijed:</strong> <i>Směs čerstvé krve zvířat a drcených bylin, podávaná do několika hodin.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Hustý, tmavý jed vařený z žluče a kovového prachu. Obět těžobu, mdloby a později halucinace o šedých stínech, které provázejí až do smrti. Oblíbený mezi jedovatými cechy, snadno se ukryje do vín.</p>
+            </div>
+
+            <div id="skyberennsky-popel-smrti" class="spell-detail">
+                <h2>Skyberennský popel smrti</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> kosti, byliny</li>
+                    <li><strong>Původ:</strong> Skyberenn</li>
+                    <li><strong>Protijed:</strong> <i>Vdechování páry z vařené žluče a bylin.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Z bylin a kostí pěstovaných na úbočí Skyberennu. Při spálení a vdechnutí prach dusí plíce, zanechává obět v agonii, jako by byla zahrabaná zaživa.</p>
+            </div>
+
+            <div id="belokrev-orlenburku" class="spell-detail">
+                <h2>bělokrev Orlenburku</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> krev, rtut</li>
+                    <li><strong>Původ:</strong> Orlenburk</li>
+                    <li><strong>Protijed:</strong> <i>Odvar z bylin namočených v měděném prachu.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Působí na krev samotnou. Při požití začne obět krvácet z oči a úst, jako by se vnitřky měnily na tekuté stříbro. Staří kronikáři tvrdí, že tento jed byl užíván orlenburskými vrahy proti královským rodům.</p>
+            </div>
+
+            <div id="Poljansky-cerny-mlyn" class="spell-detail">
+                <h2>Poljanský černý mlýn</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> kosti, žluč</li>
+                    <li><strong>Původ:</strong> Poljana</li>
+                    <li><strong>Protijed:</strong> <i>Odvar z bylin, oslazený krví mladého zvířete.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Nápoj z kostí a žluče, který má podobu husté tmavé kaše. Obet má pocit, že jí v břiše mele mýnské kolo - kroutí se bolestí a nakonec umírá na vnitřní krvácení. Tento jed byl v poljaně trestně používán proti zrádcům.</p>
+            </div>
+
+            <div id="Vrangensky-rudy-popel" class="spell-detail">
+                <h2>Vrangenský rudý popel</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> rtut, žluč</li>
+                    <li><strong>Původ:</strong> Vrangen</li>
+                    <li><strong>Protijed:</strong> <i>Směs kovového prachu s bylinami, vařená do hustého výluhu a inhalovaná.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Tento jed se vyrábí pálením rtuti a žluče v železných pánvích. Získaný popel se vdechuje. Plíce oběti se zanítí a člověk se doslova dusí vlastní krví. Vrangenské kláštery jej prý zakazovali jako "ohnivý hřích".</p>
+            </div>
+
+            <div id="Langardska-cerna-ruze" class="spell-detail">
+                <h2>Langardská černá růže</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> byliny, žluč</li>
+                    <li><strong>Původ:</strong> Langardie</li>
+                    <li><strong>Protijed:</strong> <i>Silný odvar z kostí spařených v octu.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Tento jed se vaří z bylin a žluče a přidává se do vín či likérů. Název získal podle toho, že jazyk oběti zčerná jako okvětní lístky spálené růže. Užívali jej dvorní traviči během válek Langardie.</p>
+            </div>
+
+            <div id="Altmarksy-zelezny-dech" class="spell-detail">
+                <h2>Altmarksý železný dech</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> byliny, žluč</li>
+                    <li><strong>Původ:</strong> Langardie</li>
+                    <li><strong>Protijed:</strong> <i>Silný odvar z kostí spařených v octu.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Směs kovového prachu a krve, která se podává v malých dávkách. Obět začne cítit těžký kovový prach, dech se jí zbarví do rzi a postupně se dusí. V Altmarku prý tento jed užívali kliklidaci hornických předáků.</p>
+            </div>
+
+            <div id="Witensteenská-stribrna-tisen" class="spell-detail">
+                <h2>Witensteenská stříbrná tísen</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> rtut, byliny</li>
+                    <li><strong>Původ:</strong> Witensteen</li>
+                    <li><strong>Protijed:</strong> <i>Rozemleté kosti zalité horkou vodou, vypité okamžitě po podezření.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Jed, který vypadá jako lesklý prášek, snadno zaměnitelný za drahocenný popel. Obsahuje rtut a byliny z horských luk. V těle oběti působý jako těžké okovy - svaly ochabnou a srdce ztěžkne, až umlkne.</p>
+            </div>
+
+            <div id="Poljansky-vlci-stesk" class="spell-detail">
+                <h2>Poljanský vlčí stesk</h2>
+                <ul style="list-style-type: none; padding-left: 0; line-height: 1.6; color: #ccc;">
+                    <li><strong>Suroviny:</strong> krev, byliny</li>
+                    <li><strong>Původ:</strong> Poljana</li>
+                    <li><strong>Protijed:</strong> <i>Chladivý výluh z kovového prachu a vody, podaný do žíly.</i></li>
+                </ul>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Směs krve a bylin, která navozuje stav divoké agrese. Obět se chová jako vlk zahnaný do kouta - zuřivá bez schopnosti rozumu, až se nakonec vyčerpá k smrti.</p>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
