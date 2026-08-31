@@ -53,14 +53,24 @@ A protože válku nikdo nechtěl, pokusily se obě strany o dohodu. Nejprve si v
         </div>
     </section>
 
-    <section id="mapa">
-        <h2>Mapa herního území</h2>
-        <div class="map-container">
-            <!-- Příklad bodů na mapě -->
-            <div class="map-pin" style="top: 30%; left: 40%;" onclick="openModal('tabor_kaltwasser')"></div>
-            <div class="map-pin" style="top: 60%; left: 70%;" onclick="openModal('hranicni_pevnost')"></div>
+<section id="mapa">
+    <h2>Mapa herního území</h2>
+    <p>Kliknutím na označené body zobrazíte podrobnosti o lokacích.</p>
+
+    <div class="map-container">
+        <!-- Samotný obrázek mapy -->
+        <img src="mapa-skleneny-mir.jpg" alt="Herní mapa Skleněný mír" class="map-image">
+
+        <!-- Klikací body (pozice Y v top, pozice X v left) -->
+        <div class="map-pin" style="top: 35%; left: 42%;" onclick="openModal('tabor_kaltwasser')">
+            <span class="pin-label">Tábor Kaltwasserů</span>
         </div>
-    </section>
+
+        <div class="map-pin" style="top: 68%; left: 75%;" onclick="openModal('hranicni_pevnost')">
+            <span class="pin-label">Hraniční pevnost</span>
+        </div>
+    </div>
+</section>
 
     <section id="ostatni">
         <h2>Ostatní (Mimoherní)</h2>

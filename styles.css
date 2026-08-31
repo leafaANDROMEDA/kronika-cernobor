@@ -98,26 +98,65 @@ section.active {
     transform: translateY(-5px);
 }
 
-/* MAPA A ODKAZY - Zůstává stejné */
+/* KONTEJNER MAPY */
 .map-container {
     position: relative;
     width: 100%;
-    height: 500px;
-    background-color: #333; 
-    background-image: url('mapa-skleneny-mir.jpg'); 
-    background-size: cover;
-    background-position: center;
+    max-width: 1000px;
+    margin: 0 auto;
     border: 2px solid #555;
-    border-radius: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    line-height: 0; /* Zabrání nechtěné mezeře pod obrázkem */
 }
 
+/* OBRÁZEK MAPY */
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* KLIKACÍ ŠPENDLÍK */
 .map-pin {
-    position: absolute; width: 20px; height: 20px;
-    background-color: #ff3333; border: 2px solid white;
-    border-radius: 50%; cursor: pointer; transform: translate(-50%, -50%);
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #ff3333;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.2s ease, background-color 0.2s;
+    z-index: 10;
 }
 
-.map-pin:hover { transform: translate(-50%, -50%) scale(1.3); }
+.map-pin:hover {
+    transform: translate(-50%, -50%) scale(1.4);
+    background-color: #ff6666;
+}
+
+/* JEMNÝ POPIS PŘI NAJETÍ MYŠÍ (Tooltip) */
+.pin-label {
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    border: 1px solid #8b0000;
+    pointer-events: none;
+}
+
+.map-pin:hover .pin-label {
+    display: block;
+}
 
 .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; }
 .modal-content { background-color: #222; width: 400px; margin: 100px auto; padding: 20px; border: 1px solid #8b0000; text-align: center; }
