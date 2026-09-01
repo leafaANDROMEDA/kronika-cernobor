@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlastnosti známých látek - Archiv</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Vlastnosti známých látek</h1>
+        <p>Soupis alchymistických, magických i běžných materiálů</p>
+        <nav>
+            <a href="index.html" class="nav-btn">← Zpět do archivu</a>
+        </nav>
+    </header>
+
+    <div class="kniha-layout">
+        
+        <!-- LEVÉ MENU: Seznam látek s kategoriemi -->
+        <aside class="kniha-menu">
+            <h3>Seznam látek</h3>
+
+            <h4 class="kategorie-nadpis">Kyseliny</h4>
+            <button class="kniha-btn active-btn" onclick="showSpell('latka-kyselina-hadi', this)">Hadí kyselina</button>
+            <button class="kniha-btn" onclick="showSpell('latka-kyselina-jesteri', this)">Ještěří kyselina</button>
+
+            <h4 class="kategorie-nadpis">Bezoáry</h4>
+            <button class="kniha-btn" onclick="showSpell('latka-bezoar-kralovsky', this)">Královský bezoár</button>
+            <button class="kniha-btn" onclick="showSpell('latka-bezoar-dabluv', this)">Dábluv bezoár</button>
+            <button class="kniha-btn" onclick="showSpell('latka-bezoar-mesicni', this)">Měsíční bezoár</button>
+
+
+            <h4 class="kategorie-nadpis">Dvojí látky</h4>
+            <button class="kniha-btn" onclick="showSpell('latka-tarinium', this)">Tarinium</button>
+            <button class="kniha-btn" onclick="showSpell('latka-rebis', this)">Rebis</button>
+            <button class="kniha-btn" onclick="showSpell('latka-glukarium', this)">Glukarium</button>
+
+
+            <h4 class="kategorie-nadpis">Kovy</h4>
+            <button class="kniha-btn" onclick="showSpell('latka-rtut', this)">Rtut</button>
+            <button class="kniha-btn" onclick="showSpell('latka-zelezo', this)">Železo</button>
+
+            <h4 class="kategorie-nadpis">Soli</h4>
+            <button class="kniha-btn" onclick="showSpell('latka-sul-kuchynska', this)">Kuchynská sůl</button>
+            <button class="kniha-btn" onclick="showSpell('latka-sul-cisarska', this)">Císařská sůl</button>
+            <button class="kniha-btn" onclick="showSpell('latka-sul-jeskynni', this)">Jeskynní sůl</button>
+            <button class="kniha-btn" onclick="showSpell('latka-sul-ricni', this)">Říční sůl</button>
+            <button class="kniha-btn" onclick="showSpell('latka-sul-calcion', this)">Calcion</button>
+            <button class="kniha-btn" onclick="showSpell('latka-sul-natron', this)">Natron</button>
+
+        </aside>
+
+        <!-- PRAVÝ SLOUPEC: Detail konkrétní látky -->
+        <main class="kniha-obsah">
+            
+            <!-- KYSELINY -->
+            <div id="latka-kyselina-hadi" class="spell-detail active-spell">
+                <h2>Hadí kyselina</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Zelená krystalická látka o výrazném palčivém zápachu, velmi žíravá, při styku s kovem vytváří korozi, při styku s kůží tvoří velmi silné popáleniny, rozpustná ve vodě, roztok velmi žíravý, nehořlavá.</p>
+            </div>
+
+            <div id="latka-kyselina-jesteri" class="spell-detail active-spell">
+                <h2>Ještěří kyselina</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá krystalická látka o výrazné chuti a slabém zápachu, slabá kyselina, pro styk s kůží bezpečná, rozpustná ve vodě, tvoří průzračný roztok o výrazné chuti, po styku s natronem pění.</p>
+            </div>
+
+            <!-- BEZOÁRY -->
+            <div id="latka-bezoar-kralovsky" class="spell-detail">
+                <h2>Královský bezoár</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Velmi vzácná azurová homogenní látka bez chuti a zápachu s většími zrnky a pískovou konzistencí o vyšší hustotě bez prašnosti prašnosti, málo rozpustná ve vodě, velmi dobře rozpustná v lihu.</p>
+            </div>
+
+            <div id="latka-bezoar-dabluv" class="spell-detail">
+                <h2>Dábluv bezoár</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Černá homogenní látka bez chuti a zápachu s drobnými zrnky a práškovou konzistencí o nízké hustotě a vysoké prašnosti, který tvoří zakalený, černě zbarvený roztok, po vložení do ohně tvoří velké množství kouře.</p>
+            </div>
+
+            <div id="latka-bezoar-mesicni" class="spell-detail">
+                <h2>Měsíční bezoár</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá homogenní látka bez chuti a zápachu s drobnými zrnky a práškovou konzistencí o nízké hustotě a vysoké prašnosti, který tvoří zakalený roztok, který při prosvícení koherentním zářením toto světlo rozptyluje.</p>
+            </div>
+
+            <!-- DVOJÍ LÁTKY -->
+            <div id="latka-tarinium" class="spell-detail">
+                <h2>Tarinium</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Růžová krystalická látka s dvacetistěnnou strukturou o nasládlé chuti a vůni, částečně rozpustná ve vodě, silně rozpustná v lihu, po vložení do plamene tvoří hnědou nasládlou nekrystalickou hmotu.</p>
+            </div>
+
+            <div id="latka-rebis" class="spell-detail">
+                <h2>Rebis</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá krystalická látka s dvacetistěnnou strukturou o nasládlé vůni a chuti, snadno rozpustná ve vodě, tvoří průzračný nasládlý roztok, po vložení do plamene tvoří hnědou nasládlou nekrystalickou hmotu.</p>
+            </div>
+
+            <div id="latka-glukarium" class="spell-detail">
+                <h2>Glukarium</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá krystalická látka s šeštistěnnou strukturou o nasládlé vůni a chuti, nerozpustná ve vodě, rozpustná v lihu, tvoří průzračný roztok, po vložení do plamene tvoří nasládlou nekrystalickou hmotu.</p>
+            </div>
+
+            <!-- KOVY -->
+            <div id="latka-rtut" class="spell-detail">
+                <h2>Rtut</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Stříbrná nebo modrá kapalina, silně jedovatá, bez výrazné vůně, využívaná hojně v alchymistických vědách.</p>
+            </div>
+
+            <div id="latka-zelezo" class="spell-detail">
+                <h2>Železo</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Šedá krystalická látka o vysoké hustotě, pevné skupenství, při styku s vlhkostí vzniká koroze, hojně využívaná v kovářských vědách.</p>
+            </div>
+
+            <!-- SOLI -->
+            <div id="latka-sul-kuchynska" class="spell-detail">
+                <h2>Kuchynská sůl</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá nehořlavá krystalická látka s krychlovou strukturou bez zápachu a o výrazné chuti, která je rozpustná ve vodě a tvoří průzračný roztok slané chuti. hojně využívaná jak ve vědách alchymistických, tak vědách kulinářských.</p>
+            </div>
+
+            <div id="latka-sul-cisarska" class="spell-detail">
+                <h2>Císařská sůl</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá krystalická látka s osmihrannou strukturou bez chuti a o výrazné chuti, která je rozpustná ve vodě a tvoří průzračný roztok slané chuti, velmi vzácná látka, která po vložení do plamene hoří jasně modrou barvou.</p>
+            </div>
+
+            <div id="latka-sul-jeskynni" class="spell-detail">
+                <h2>Jeskynní sůl</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Zelenkavá krystalická látka s šestihrannou strukturou bez chuti a zápachu, která je rozpustná ve vodě a tvoří nazelenalý prusvirný roztok, velmi vzácná látka, která do vložení do plamene hoří.</p>
+            </div>
+
+            <div id="latka-sul-ricni" class="spell-detail">
+                <h2>Říční sůl</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá nehořlavá krystalická látka s krychlovou strukturou bez zápachu a o výrazné chuti, která je rozpustná ve vodě a tvoří průzračný roztok slané chuti. hojně využívaná jak ve vědách alchymistických, tak vědách kulinářských.</p>
+            </div>
+
+            <div id="latka-sul-calcion" class="spell-detail">
+                <h2>Calcion</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá krystalická látka bez chuti a zápachu s desetihrannou strukturou, která je slabě rozpustná ve vodě, látka hojně se vyskytující v přírodě, po vložení do plamene hoří jasně modrou barvou.</p>
+            </div>
+
+            <div id="latka-sul-natron" class="spell-detail">
+                <h2>Natron</h2>
+                <hr style="border-color: #444; margin: 20px 0;">
+                <p>Bílá krystalická látka s velmi drobnými krystalky a osmihrannou strukturou bez výrazné chuti a bez zápachu, po vložení do kyseliny pění, při vyšších koncentracích v kombinaci s kyselinou začíná vařit, po vložení do plamene hoří žlutě.</p>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
