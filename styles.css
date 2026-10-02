@@ -313,6 +313,21 @@ section.active {
     margin-top: 10px;
 }
 
+/* ROZŠÍŘENÍ PRO SEKCI POVÍDEK */
+#povidky {
+    max-width: 1400px; /* Roztáhne celou sekci do šířky (původně bylo 900px) */
+}
+
+/* Zúžení levého menu speciálně jen pro povídky, aby zbylo maximum místa na text */
+#povidky .kniha-menu {
+    flex: 0 0 250px; /* Původně bylo 300px */
+}
+
+/* Zvětšení samotného textu pro lepší čitelnost */
+#povidky .povidka-text {
+    font-size: 18px; /* Udělá text povídky o něco větší */
+}
+
 .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; }
 .modal-content { background-color: #222; width: 400px; margin: 100px auto; padding: 20px; border: 1px solid #8b0000; text-align: center; }
 .close-btn { background: red; color: white; border: none; padding: 5px 10px; cursor: pointer; float: right; }
