@@ -470,7 +470,8 @@ html {
 body {
     font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif !important;
     background:
-        radial-gradient(ellipse at 50% 0%, rgba(105, 116, 90, 0.15), transparent 55%),
+        linear-gradient(rgba(25, 27, 22, 0.30), rgba(25, 27, 22, 0.42)),
+        url('uvod_les.jpg') center center / cover fixed no-repeat,
         var(--kniha-noc) !important;
     color: var(--kniha-pergamen) !important;
     line-height: 1.7;
@@ -1037,21 +1038,16 @@ section.active #frakce .frakce-card {
 }
 
 
-/* ÚVODNÍ OBRAZ — les za pergamenem kronikářčina dopisu */
+/* LESNÍ POZADÍ KOLEM PERGAMENŮ — samotný pergamen zůstává neprůhledný */
 .kronikarka-uvod {
-    background:
-        linear-gradient(
-            135deg,
-            rgba(241, 231, 207, 0.88),
-            rgba(232, 217, 181, 0.91)
-        ),
-        url('uvod_les.jpg') center 55% / cover no-repeat !important;
+    background: linear-gradient(145deg, #f1e7cf, #e8d9b5) !important;
     background-color: #e8d9b5 !important;
     border-color: #b69a63 !important;
 }
 
 @media (max-width: 768px) {
-    .kronikarka-uvod {
+    body {
+        background-attachment: scroll !important;
         background-position: center center !important;
     }
 }
