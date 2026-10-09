@@ -441,3 +441,443 @@ section.active {
         text-align: left;
     }
 }
+
+
+/* =========================================================
+   DALIMILINA KNIHOVNA — sjednocený vizuální styl archivu
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap');
+
+:root {
+    --kniha-noc: #25271f;
+    --kniha-noc-hluboka: #191b16;
+    --kniha-drevo: #343329;
+    --kniha-pergamen: #e8d9b5;
+    --kniha-pergamen-svetly: #f1e7cf;
+    --kniha-inkoust: #493c2d;
+    --kniha-inkoust-tlumeny: #6e5c43;
+    --kniha-zelena: #69745a;
+    --kniha-zelena-tmava: #3d4938;
+    --kniha-zlato: #b69a63;
+    --kniha-vinova: #8b3932;
+    --kniha-linka: #b9a477;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif !important;
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(105, 116, 90, 0.15), transparent 55%),
+        var(--kniha-noc) !important;
+    color: var(--kniha-pergamen) !important;
+    line-height: 1.7;
+}
+
+header {
+    position: relative;
+    padding: 34px 20px 28px !important;
+    background: linear-gradient(135deg, #303126, #1d2019 75%) !important;
+    color: var(--kniha-pergamen) !important;
+    border-bottom: 1px solid var(--kniha-zlato) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+header::after {
+    content: "✦  ❦  ✦";
+    display: block;
+    margin-top: 12px;
+    color: var(--kniha-zlato);
+    letter-spacing: 0.35em;
+    font-size: 14px;
+}
+
+header h1,
+header h2,
+header h3,
+.kronikarka-uvod h2,
+.rocniky-container h3,
+.spisy-container h3,
+.kniha-menu h3,
+.kniha-obsah h1,
+.kniha-obsah h2,
+.kniha-obsah h3,
+section h1,
+section h2,
+section h3,
+section h4 {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif !important;
+    letter-spacing: 0.025em;
+}
+
+header h1 {
+    margin: 0 0 4px;
+    color: #d7bd83 !important;
+    font-size: clamp(2.3rem, 5vw, 3.6rem);
+    font-weight: 500;
+    line-height: 1.12;
+}
+
+header h2 {
+    color: var(--kniha-pergamen) !important;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+header p {
+    max-width: 760px;
+    margin: 10px auto;
+    color: #d3c7aa !important;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav button,
+nav .nav-btn,
+.layer-btn {
+    border: 1px solid #89754d !important;
+    border-radius: 3px !important;
+    background: rgba(232, 217, 181, 0.04) !important;
+    color: var(--kniha-pergamen) !important;
+    font-family: 'Source Serif 4', Georgia, serif !important;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+nav button:hover,
+nav .nav-btn:hover,
+.layer-btn:hover {
+    background: var(--kniha-zelena-tmava) !important;
+    border-color: var(--kniha-zlato) !important;
+    transform: translateY(-1px);
+}
+
+nav .nav-btn {
+    text-decoration: none !important;
+}
+
+.main-layout,
+.kniha-layout {
+    align-items: stretch;
+}
+
+.main-layout {
+    max-width: 1180px !important;
+    gap: 28px !important;
+    margin-top: 34px !important;
+    margin-bottom: 54px !important;
+}
+
+.rocniky-container,
+.spisy-container {
+    background: linear-gradient(145deg, var(--kniha-pergamen-svetly), var(--kniha-pergamen)) !important;
+    color: var(--kniha-inkoust) !important;
+    border: 1px solid var(--kniha-linka) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22), inset 0 0 0 5px rgba(255, 255, 255, 0.12);
+}
+
+.rocniky-container h3,
+.spisy-container h3 {
+    color: var(--kniha-inkoust) !important;
+    border-bottom: 1px solid var(--kniha-linka) !important;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 12px !important;
+}
+
+.rocniky-list {
+    color: var(--kniha-inkoust-tlumeny) !important;
+    padding-left: 34px;
+}
+
+.rocniky-list li,
+.spisy-list li {
+    padding: 2px 0;
+}
+
+.rocniky-list li::marker {
+    color: #8d7850;
+    font-variant-numeric: oldstyle-nums;
+}
+
+.rocniky-list a,
+.spisy-list a {
+    color: var(--kniha-zelena-tmava) !important;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.rocniky-list a:hover,
+.spisy-list a:hover {
+    color: var(--kniha-vinova) !important;
+    border-bottom-color: var(--kniha-vinova);
+}
+
+.rocniky-list .active-rocnik,
+.active-rocnik {
+    color: var(--kniha-vinova) !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.spisy-list {
+    color: var(--kniha-inkoust);
+}
+
+.kronikarka-uvod {
+    margin: 34px auto 0 !important;
+    background:
+        linear-gradient(rgba(241, 231, 207, 0.96), rgba(232, 217, 181, 0.97)),
+        var(--kniha-pergamen) !important;
+    color: var(--kniha-inkoust) !important;
+    border: 1px solid var(--kniha-zlato) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28), inset 0 0 0 6px rgba(255, 255, 255, 0.14) !important;
+}
+
+.kronikarka-uvod h2 {
+    color: var(--kniha-inkoust) !important;
+    font-size: clamp(2rem, 4vw, 2.6rem) !important;
+}
+
+.kronikarka-uvod .uvod-incipit::first-letter {
+    color: var(--kniha-vinova) !important;
+}
+
+.kronikarka-uvod .uvod-ornament,
+.kronikarka-uvod .uvod-podpis span {
+    color: #8a6d37 !important;
+}
+
+section {
+    line-height: 1.75;
+}
+
+section.active {
+    box-sizing: border-box;
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: clamp(22px, 4vw, 44px) !important;
+    background: linear-gradient(145deg, var(--kniha-pergamen-svetly), var(--kniha-pergamen)) !important;
+    color: var(--kniha-inkoust) !important;
+    border: 1px solid var(--kniha-linka);
+    border-radius: 3px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2), inset 0 0 0 5px rgba(255, 255, 255, 0.12);
+}
+
+section.active h1,
+section.active h2,
+section.active h3,
+section.active h4 {
+    color: var(--kniha-inkoust) !important;
+}
+
+section.active a:not(.nav-btn) {
+    color: var(--kniha-zelena-tmava);
+}
+
+section.active a:not(.nav-btn):hover {
+    color: var(--kniha-vinova);
+}
+
+.kniha-layout {
+    max-width: 1280px !important;
+    gap: 24px !important;
+    margin-top: 34px !important;
+    margin-bottom: 54px !important;
+}
+
+.kniha-menu {
+    background: linear-gradient(160deg, #303329, #20231c) !important;
+    color: var(--kniha-pergamen) !important;
+    border: 1px solid #766644 !important;
+    border-radius: 3px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.kniha-menu h3 {
+    color: #d7bd83 !important;
+    border-bottom-color: #766644 !important;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.kategorie-nadpis {
+    color: #d1b77d !important;
+    border-bottom-color: #65583d !important;
+}
+
+.kniha-btn {
+    background: rgba(232, 217, 181, 0.045) !important;
+    color: #e8d9b5 !important;
+    border-color: #514d3e !important;
+    border-radius: 3px !important;
+    font-family: 'Source Serif 4', Georgia, serif !important;
+}
+
+.kniha-btn:hover {
+    background: #3d4938 !important;
+    color: #fff1d1 !important;
+    border-color: #a38b58 !important;
+}
+
+.kniha-btn.active-btn {
+    background: #69745a !important;
+    color: #fff1d1 !important;
+    border-color: #b69a63 !important;
+}
+
+.kniha-obsah {
+    background: linear-gradient(145deg, var(--kniha-pergamen-svetly), var(--kniha-pergamen)) !important;
+    color: var(--kniha-inkoust) !important;
+    border: 1px solid var(--kniha-linka) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2), inset 0 0 0 5px rgba(255, 255, 255, 0.12);
+}
+
+.kniha-obsah h1,
+.kniha-obsah h2,
+.kniha-obsah h3,
+.kniha-obsah h4 {
+    color: var(--kniha-inkoust) !important;
+}
+
+.spell-detail {
+    color: var(--kniha-inkoust);
+}
+
+.spell-detail h2,
+.spell-detail h3 {
+    border-bottom: 1px solid var(--kniha-linka);
+    padding-bottom: 8px;
+}
+
+.spell-detail a,
+.kniha-obsah a {
+    color: var(--kniha-zelena-tmava);
+}
+
+.spell-detail a:hover,
+.kniha-obsah a:hover {
+    color: var(--kniha-vinova);
+}
+
+.map-container {
+    border-color: #89754d !important;
+    border-radius: 3px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.map-pin {
+    background-color: var(--kniha-vinova) !important;
+    border-color: var(--kniha-pergamen) !important;
+}
+
+.map-pin:hover {
+    background-color: #b85b4e !important;
+}
+
+.pin-label {
+    background: rgba(37, 39, 31, 0.96) !important;
+    color: var(--kniha-pergamen) !important;
+    border-color: var(--kniha-zlato) !important;
+    font-family: 'Source Serif 4', Georgia, serif !important;
+}
+
+.layer-btn.active {
+    background: var(--kniha-zelena-tmava) !important;
+    border-color: var(--kniha-zlato) !important;
+}
+
+.modal-content {
+    box-sizing: border-box;
+    max-width: min(500px, calc(100vw - 32px));
+    background: var(--kniha-pergamen-svetly) !important;
+    color: var(--kniha-inkoust) !important;
+    border: 1px solid var(--kniha-zlato) !important;
+    border-radius: 3px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.modal-content h3 {
+    color: var(--kniha-vinova) !important;
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+}
+
+.modal-content a {
+    color: var(--kniha-vinova) !important;
+}
+
+.action-btn,
+.close-btn {
+    background: var(--kniha-vinova) !important;
+    color: #fff4df !important;
+    border: 1px solid #6f2c27 !important;
+    border-radius: 3px !important;
+    font-family: 'Source Serif 4', Georgia, serif !important;
+}
+
+.action-btn:hover,
+.close-btn:hover {
+    background: #6f2c27 !important;
+}
+
+#povidky .povidka-text {
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.85;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 26px 16px 22px !important;
+    }
+
+    .main-layout,
+    .kniha-layout {
+        margin: 22px 14px 36px !important;
+        padding: 0 !important;
+        gap: 18px !important;
+    }
+
+    .rocniky-container,
+    .spisy-container {
+        padding: 24px 22px !important;
+    }
+
+    section.active {
+        margin: 20px 12px !important;
+        padding: 24px 20px !important;
+    }
+
+    .kniha-menu,
+    .kniha-obsah {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 22px !important;
+    }
+
+    .kronikarka-uvod {
+        margin: 22px 12px 0 !important;
+        padding: 25px 22px !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
