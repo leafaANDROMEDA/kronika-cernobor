@@ -52,3 +52,19 @@ function showSpell(spellId, btnElement) {
     // 4. Přidá červenou barvu na to tlačítko, na které se právě kliklo
     btnElement.classList.add('active-btn');
 }
+
+// SYSTÉM PRO ÚVODNÍ UPOZORNĚNÍ
+document.addEventListener("DOMContentLoaded", function() {
+    // Zkontroluje, zda má uživatel v prohlížeči uloženou informaci o přečtení
+    if (!localStorage.getItem('disclaimerAccepted')) {
+        // Pokud ne, zobrazíme okno (použijeme flex pro vycentrování)
+        document.getElementById('disclaimer-modal').style.display = 'flex';
+    }
+});
+
+function acceptDisclaimer() {
+    // Skryje okno
+    document.getElementById('disclaimer-modal').style.display = 'none';
+    // Uloží do prohlížeče, že uživatel už souhlasil, takže se okno znovu neukáže
+    localStorage.setItem('disclaimerAccepted', 'true');
+}

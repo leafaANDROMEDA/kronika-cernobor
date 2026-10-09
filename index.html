@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- VYSKAKOVACÍ OKNO S UPOZORNĚNÍM -->
+    <div id="disclaimer-modal" class="modal-overlay" style="display: none; align-items: center;">
+        <div class="modal-content" style="max-width: 500px; padding: 30px;">
+            <h3 style="color: #ff4444; margin-top: 0;">Důležité upozornění</h3>
+            <p style="text-align: justify; line-height: 1.6; margin-bottom: 25px;">
+                Tato stránka je fanouškovským archivem a <strong>není tvořena oficiálními organizátory</strong> LARPu Černobor. Informace a texty uvedené na těchto stránkách mohou být zavádějící, subjektivní, nebo nemusí být z hlediska oficiálního herního lore aktuální.
+            </p>
+            <button class="action-btn" onclick="acceptDisclaimer()" style="width: 100%; margin-top: 0;">Rozumím a chci vstoupit</button>
+        </div>
+    </div>
+
     <header>
         <h1>Melóra Etyalië</h1>
         <h2>Kronika Černoboru</h2>

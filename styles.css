@@ -116,6 +116,11 @@ section.active {
     display: block; /* Vlastní stránky frakcí mají section rovnou active */
 }
 
+/* CENTROVÁNÍ UPOZORŇOVACÍHO OKNA */
+#disclaimer-modal.modal-overlay {
+    justify-content: center;
+}
+
 /* KARTY FRAKCÍ */
 .frakce-grid {
     display: flex;
