@@ -1035,3 +1035,23 @@ section.active #frakce .frakce-card {
         line-height: 1.8 !important;
     }
 }
+
+
+/* ÚVODNÍ OBRAZ — les za pergamenem kronikářčina dopisu */
+.kronikarka-uvod {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(241, 231, 207, 0.88),
+            rgba(232, 217, 181, 0.91)
+        ),
+        url('uvod_les.jpg') center 55% / cover no-repeat !important;
+    background-color: #e8d9b5 !important;
+    border-color: #b69a63 !important;
+}
+
+@media (max-width: 768px) {
+    .kronikarka-uvod {
+        background-position: center center !important;
+    }
+}
