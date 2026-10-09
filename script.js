@@ -68,3 +68,27 @@ function acceptDisclaimer() {
     // Uloží do prohlížeče, že uživatel už souhlasil, takže se okno znovu neukáže
     localStorage.setItem('disclaimerAccepted', 'true');
 }
+
+JavaScript
+// PŘEPÍNÁNÍ VRSTEV NA MAPĚ
+function filterMap(layer, btnElement) {
+    // 1. Změna aktivního tlačítka (odstranění z ostatních a přidání na kliknuté)
+    const buttons = document.querySelectorAll('.layer-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    btnElement.classList.add('active');
+
+    // 2. Filtrace samotných bodů na mapě
+    const pins = document.querySelectorAll('.map-pin');
+    pins.forEach(pin => {
+        if (layer === 'vse') {
+            pin.style.display = 'block'; // Zobrazí všechny
+        } else {
+            // Pokud má bod třídu odpovídající zvolené vrstvě, zobrazí se, jinak se skryje
+            if (pin.classList.contains(layer)) {
+                pin.style.display = 'block';
+            } else {
+                pin.style.display = 'none';
+            }
+        }
+    });
+}
