@@ -8,5 +8,10 @@
         "title": "Doupě snovačky",
         "desc": "Sestupuješ do temné skalní trhliny páchnoucí starou krví. Stěny pokrývají silná stříbřitá vlákna. Dáváš si dobrý pozor, aby ses jich nedotkl – kape z nich nazelenalý, prudce jedovatý sliz, který s leptavým syčením dopadá na kámen. Pod nohama ti křupou vyschlé kosti a nad hlavou visí obří kokony. Náhle nechtěně zavadíš o skryté vlákno. Klenbou se rozlehne zabzučení sítě a hned vzápětí suché klapání klepet. Ve tmě nad tebou se rozsvítí osmero chladných očí.",
         "factionLink": "frakce-poljanska.html"
+    },
+    "opustena_mohyla": {
+        "title": "Opuštěná mohyla",
+        "desc": "Přicházíte k malému zarostlému kopečku. Když se podíváte blíže, zjistíte že pod zeleným nánosem je něco co nejvíce připomíná náhrobek. Povede se vám ho v celku obstojně očisti, abyste zjistili že je pokryt těžce čitelným, ale přeci runovým písmem. Naprosto netušíte co ta slova znamenají a už se chystáte k odchodu, když se před vašima očima runy začnou přeskupovat a kroutit na kameni jako malí hádci, až máte před sebou řeč které rozumíte: Zde v zemi leží Strašen, vyvolený Jalhuna. Pětkrát pozvedl své mocné kopí, pětkrát ho smočil v krvi nestvůr sužující tento kraj a rozehnal je do pěti sran. Vzdej mu hold, nebod díky jeho oběti jsi v bezpečí i ty.",
+        "factionLink": "frakce-poljanska.html"
     }
 }
