@@ -954,3 +954,84 @@ section.active #frakce .frakce-card {
         padding: 9px 12px;
     }
 }
+
+
+/* ČITELNOST DENÍKŮ A POVÍDEK — tmavý inkoust na pergamenu */
+#povidky > p {
+    color: #493c2d !important;
+    opacity: 1 !important;
+    font-size: 1.08rem;
+}
+
+#povidky .kniha-obsah {
+    background: linear-gradient(145deg, #f5ecd6, #e8d9b5) !important;
+    color: #30291f !important;
+}
+
+#povidky .kniha-obsah .spell-detail,
+#povidky .kniha-obsah .povidka-text {
+    color: #30291f !important;
+    opacity: 1 !important;
+    font-family: 'Source Serif 4', Georgia, serif !important;
+    font-size: 1.08rem;
+    line-height: 1.9 !important;
+    text-shadow: none !important;
+}
+
+#povidky .kniha-obsah .povidka-text p {
+    color: #30291f !important;
+    margin: 0 0 1.15em;
+}
+
+#povidky .kniha-obsah .povidka-text em {
+    color: #493c2d !important;
+}
+
+#povidky .kniha-obsah .povidka-text strong {
+    color: #30291f !important;
+    font-weight: 700;
+}
+
+#povidky .kniha-obsah h3 {
+    color: #3d4938 !important;
+    border-bottom: 1px solid #b9a477;
+    padding-bottom: 0.6em;
+}
+
+#povidky .kniha-menu {
+    background: linear-gradient(160deg, #303329, #20231c) !important;
+    color: #f1e7cf !important;
+}
+
+#povidky .kniha-menu h3 {
+    color: #e0c991 !important;
+}
+
+#povidky .kniha-btn {
+    color: #f1e7cf !important;
+    background: #34382e !important;
+    border-color: #69745a !important;
+}
+
+#povidky .kniha-btn:hover,
+#povidky .kniha-btn:focus-visible {
+    color: #fff8e8 !important;
+    background: #4a5941 !important;
+}
+
+#povidky .kniha-btn.active-btn {
+    color: #fff4df !important;
+    background: #69745a !important;
+    border-color: #b69a63 !important;
+}
+
+@media (max-width: 768px) {
+    #povidky .kniha-obsah {
+        padding: 24px 20px !important;
+    }
+
+    #povidky .kniha-obsah .povidka-text {
+        font-size: 1rem;
+        line-height: 1.8 !important;
+    }
+}
