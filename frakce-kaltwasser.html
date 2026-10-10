@@ -14,10 +14,12 @@
         <h2>Záznamy o rodu, jeho dědicích a tajemstvích tvrze</h2>
         <nav>
             <a href="index.html" class="nav-btn">← Zpět do knihovny</a>
+            <button onclick="showSection('pribeh')">Příběh rodu</button>
+            <button onclick="showSection('frakce')">Frakce a družiny</button>
         </nav>
     </header>
 
-    <section class="active">
+    <section id="pribeh" class="active">
         <div class="uvod-ornament" aria-hidden="true">✦ ❦ ✦</div>
         <p>Nad tvrzí Kaltwasser se vznášela poklidná noc. Většina jejích obyvatel už dávno spala, avšak v okně Reginarovy pracovny stále mihotalo světlo několika voskovic náhodně rozestavěných na stole. Mezi nimi se nacházel list pergamenu zpola pokrytý roztřeseným písmem a zatěžkaný kalamářem, aby se nekrabatil. Nad ním se krčil starý pán tvrze zachumlaný v plášti lemovaném kožešinou, jeho kůže nápadně připomínala pomačkaný pergamen. V ruce třímal brk, ale hleděl nepřítomně do zdi. Mračil se – snad na plameny tančící po zdi. Ze strnulosti ho vytrhlo zahoukání sýčka.</p>
 
@@ -34,19 +36,35 @@
 
         <div class="uvod-ornament" aria-hidden="true">❦</div>
 
+    </section>
+
+    <section id="frakce">
+        <h2>Frakce a družiny rodu Kaltwasserů</h2>
+        <p>Rodové dědictví přivádí na tvrz tři odlišné skupiny. Vyber si, čí příběh tě zajímá.</p>
+        <div class="frakce-grid">
+            <a class="frakce-card" href="#ulrich">Ulrichova kompanie</a>
+            <a class="frakce-card" href="#gabriel">Gabrielovi společníci</a>
+            <a class="frakce-card" href="#elodie">Elodiini patroni</a>
+        </div>
+        <div id="ulrich" class="frakce-detail">
         <h2>Ulrich Kaltwasser a jeho kompanie</h2>
         <p>Ulrich Kaltwasser, starší ze synů Reginara, se světem pobíjí s šavlí v ruce už několik let. Po hádce s otcem opustil rodný dům a odešel do Poljany. Se svou kompanií se zúčastnil snad všech válečných tažení a páchal činy slavné i nechvalně proslulé. Tak se to alespoň říká. Je jako vítr a využívá každé příležitosti, jak si obstarat živobytí či získat přízeň dam. I když v poslední době po jeho boku stává jen jediná, krásná paní Evgenia, o které se říká, že není okouzlující jen svým půvabem. Druhým a neméně důležitým z jeho společníků je dobrodruh Eirik Kharhard Vargson, trpaslík z klanu Kharhard, který kudy chodí, tam cítí peníze či skryté poklady. A jakmile zavětří, hledá a hledá a někdy i najde. Poslední dobou se však proslýchá, že se jim smůla lepí na paty víc, než by bylo zdrávo. Proto nemuseli rozvažovat dlouho a zamířili na Kaltwasser. Třeba se tím jejich problémy vyřeší.</p>
         <p><em>Pokud chceš hodovat, chvástat se, s šavlí v ruce se bít, o budoucnosti snít, plout ve vírech nemilosrdné magie a pátrat po pokladu pod každým kamenem, dej se ke kompanii Ulricha Kaltwassera! Neb sláva na nikoho nečeká a je třeba ji urvat co největší díl.</em></p>
 
+        </div>
+        <div id="gabriel" class="frakce-detail">
         <h2>Gabriel Kaltwasser a jeho společníci</h2>
         <p>Gabriel Kaltwasser, mladší ze synů Reginara, je zádumčivý, neduživý mladík, který byl svým zraněním v mládí odsouzen k tomu, aby se vydal úplně jinou cestou, než jeho všemi oblíbenější bratr. Je přemýšlivý a má hlavu na čísla. Proto nikoho neudiví, že poslední roky vyřizuje rodinný byznys ve Vrangenu a Orlenburku jako zdatný obchodník. Naučil se znát svou cenu a jednou o tom zajisté přesvědčí i ty, kteří ho podceňovali. Navíc o všechno, co by Gabrielovi činilo potíže, se stará jeho dobrý přítel a bratranec v jedné osobě, Vilém, proslavený lovec bestií. Posledním členem nerozlučné trojice je léčitelka Violka, prostá dívka z Kaltwasseru se zájmem o místní folklór a legendy. Jejich osudy jsou propletenější, než se může zdát. A tak když otec nakázal, vrací se Gabriel se svými společníky na Kaltwasser vyřídit staré dluhy.</p>
         <p><em>Pokud si myslíš, že nejlepší prospěch ti přinese jen dobrý plán, že staré křivdy je třeba vyřešit, že nadpřirozeným tajemstvím je třeba přijít na kloub a že není nic důležitějšího, než zbavit svět všech netvorů, pak věz, že Gabrielova obchodnická družina potřebuje své strážce, společníky, lovce, úředníky i léčitele.</em></p>
 
+        </div>
+        <div id="elodie" class="frakce-detail">
         <h2>Elodie Kaltwasser a její patroni</h2>
         <p>Pan Reginar svoji vnučku Elodii střeží jako oko v hlavě, neboť má zřejmě stále v živé paměti tragický osud její matky Kristýny. Není proto divu, že starostí o bezpečí svého nejcennějšího pokladu pověřil svého švagra a hejtmana Maxmiliána Weissenberga. Pan Maxmilián převzal starost o chod tvrze a rodových statků, když je Reginarovi synové opustili. Krom něj připadl nelehký úděl výchovy mladé dívky i otci Jeronýmovi, zvídavému hradnímu kaplanovi, který Kaltwasserům slouží déle než mnozí. Mladé Elodii nikdy nebylo dědečkovo přehnané opatrovnictví po chuti, ale jako dítě s tím pramálo zmohla. Jenže čas plyne a z dívky se stala mladá žena, která má svou hlavu a je rozhodnutá naplnit svůj osud, ať už bude jakýkoli.</p>
         <p><em>Pokud rád pátráš po zapovězeném a není ti cizí se proplétat pavučinou záhad, tak bude tvoje pomoc na tvrzi více než vítána. Historie rodu Kaltwasserů i okolní kraj skrývá mnohá tajemství. Některé mají být odhaleny, aby osud mladé Elodie mohl být naplněn, zatímco některé mají, pro dobro všech, zůstat skryta před zraky světa.</em></p>
 
+
+        </div>
         <div class="uvod-ornament" aria-hidden="true">✦ ❦ ✦</div>
     </section>
 </body>
-</html>
